@@ -6,7 +6,7 @@ import seaborn as sns
 st.title("Credit Card Fraud Detection - Visualization")
 st.write("Student level ML project visualization")
 
-df = pd.read_csv("creditcard_2023.csv")
+df = pd.read_csv("creditcard_2023_compressed.csv.xz", compression="xz")
 
 st.subheader("Dataset Preview")
 st.write(df.head())
